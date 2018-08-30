@@ -77,7 +77,8 @@ public class MergeSortImpl {
 	
 	public static void main(String [] args)
 	{
-		int[] arr = {3, 7, 5, 8, 1};
+		int [] arr = {3,4,1,2,6,7,9};
+		//int[] arr = {3, 7, 5, 8, 1};
 		System.out.println("Given array:"+Arrays.toString(arr)+(arr.length-1));
 		sort(arr, 0, arr.length-1);
 		System.out.println("Sorted array:"+Arrays.toString(arr));

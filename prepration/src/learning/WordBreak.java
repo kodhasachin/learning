@@ -34,7 +34,7 @@ public class WordBreak {
 		dict.add("monkey");
 		
 	    System.out.println("Given Dictionary is as: "+dict.toString());
-	    System.out.println("Valid Word Break: "+word_break("ilovecoffee"));
+	    System.out.println("Valid Word Break: "+word_break("monkeye"));
 	}
 
 }

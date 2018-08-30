@@ -53,6 +53,9 @@ public class EncapsulationExample {
 		System.out.println("Employee age is: "+ee.get_age());
 		System.out.println("Employee salary is: "+ee.get_salary());
 		System.out.println("Employee Name is: "+ee.get_empName());
+		System.out.println("Employee Name is: "+ee.name);
+		ee.name="Sachin Kodha";
+		System.out.println("Employee Name is: "+ee.name);
 
 	}
 
