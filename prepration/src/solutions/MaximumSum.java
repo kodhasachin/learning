@@ -19,8 +19,8 @@ public class MaximumSum {
 	}
 
 	public static void main(String[] args) {
-		int [] arr = {5,  5, 10, 40, 50, 35};
-		//int [] arr = {1,2,3,4};
+		//int [] arr = {5,  5, 10, 40, 50, 35};
+		int [] arr = {5,4,1};
 		System.out.println("Maximum sum of non-adjacent elements is: "+maximum_sum(arr));
 
 	}

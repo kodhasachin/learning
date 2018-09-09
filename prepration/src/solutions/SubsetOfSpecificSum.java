@@ -35,7 +35,7 @@ public class SubsetOfSpecificSum {
 
 	public static void main(String[] args) {
 		int[] input = {12, 1, 61, 5, 9, 2};
-		int sum = 14;
+		int sum = 24;
 		
 		System.out.println("Input Array is: "+ Arrays.toString(input));
 		System.out.println("Given sum is: "+ sum);

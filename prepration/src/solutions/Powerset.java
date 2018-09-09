@@ -15,7 +15,9 @@ public class Powerset {
 			{
 				//System.out.println("i & (1 << j))"+ (i & (1 << j)));
 				//System.out.println("(1 << j): "+ (1 << j));
-				System.out.print((i & (1<<j) ));
+				//System.out.print((i & (1<<j) ));
+				//if((i & Math.pow(2, j)))
+				
 				if((i & (1<<j) )> 0)
                     System.out.print(arr[j]);
 			}
