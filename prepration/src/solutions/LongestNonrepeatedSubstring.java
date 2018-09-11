@@ -2,7 +2,7 @@ package solutions;
 
 import java.util.HashMap;
 
-public class LongestSubstring {
+public class LongestNonrepeatedSubstring {
 	
 	public static int longest_substring_non_repeated_chars(String str)
 	{
