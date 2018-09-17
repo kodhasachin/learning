@@ -7,7 +7,7 @@ public class StringCompression {
 		StringBuilder sb = new StringBuilder();
 		char[] a = str.toCharArray();
 		int count=1;
-		for(int i=0; i<str.length()-1;i++)
+		for(int i=0; i<str.length();i++)
 		{
 			sb.append(a[i]);
 			while(i+1!=a.length&&a[i]==a[i+1])
@@ -25,7 +25,7 @@ public class StringCompression {
 	}
 
 	public static void main(String[] args) {
-		String str = "aabbbccccc";
+		String str = "aabbbcccccb";
 		System.out.println("Given String is: "+str);
 		System.out.println("Compressed String is: "+string_compression(str));
 
