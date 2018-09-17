@@ -56,12 +56,12 @@ public class FindPrefixOrSuffix {
 		if(str.length()==1)
 			return str;
 		else
-			return str.charAt(str.length()-1)+str.substring(0, str.length()-1);
+			return str.charAt(str.length()-1)+reverse_string(str.substring(0, str.length()-1));
 	}
 
 	public static void main(String[] args) {
 		String str1 = "sachinsuf";
-		String str2 = "wersuf";
+		String str2 = "sacsuf";
 		System.out.println("First string is: "+str1);
 		System.out.println("Second string is: "+str2);
 		
