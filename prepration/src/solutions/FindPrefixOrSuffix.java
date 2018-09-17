@@ -2,28 +2,61 @@ package solutions;
 
 public class FindPrefixOrSuffix {
 	
+//	public static String find_prefix_or_suffix(String str1, String str2, boolean is_prefix)
+//	{
+//		String output = "";
+//		int i=0,j=0;
+//		if(!is_prefix)
+//		{
+//			while(i<str1.length() && j<str2.length() && str1.charAt(i)!=str2.charAt(j))
+//			{
+//				i++;
+//				j++;
+//			}
+//		}
+//		System.out.println("i="+i+" & j="+j);
+//		while(i<str1.length() && j<str2.length() && str1.charAt(i)==str2.charAt(j))
+//		{
+//			output=output+str1.charAt(i);
+//			i++;
+//			j++;
+//		}
+//		
+//		
+//		return output;
+//	}
+	
 	public static String find_prefix_or_suffix(String str1, String str2, boolean is_prefix)
 	{
 		String output = "";
+		String tmp1=str1;
+		String tmp2=str2;
 		int i=0,j=0;
 		if(!is_prefix)
 		{
-			while(i<str1.length() && j<str2.length() && str1.charAt(i)!=str2.charAt(j))
-			{
-				i++;
-				j++;
-			}
+			tmp1=reverse_string(tmp1);
+			tmp2=reverse_string(tmp2);
 		}
-		System.out.println("i="+i+" & j="+j);
-		while(i<str1.length() && j<str2.length() && str1.charAt(i)==str2.charAt(j))
+		
+		while(i<tmp1.length() && j<tmp2.length() && tmp1.charAt(i)==tmp2.charAt(j))
 		{
-			output=output+str1.charAt(i);
+			output=output+tmp1.charAt(i);
 			i++;
 			j++;
 		}
 		
-		
-		return output;
+		if(is_prefix)
+			return output;
+		else
+			return reverse_string(output);
+	}
+	
+	public static String reverse_string(String str)
+	{
+		if(str.length()==1)
+			return str;
+		else
+			return str.charAt(str.length()-1)+str.substring(0, str.length()-1);
 	}
 
 	public static void main(String[] args) {
