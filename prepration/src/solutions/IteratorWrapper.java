@@ -54,6 +54,8 @@ public class IteratorWrapper {
 		inputlist.add(5);
 		inputlist.add(4);
 		inputlist.add(6);
+		inputlist.add(3);
+		inputlist.add(7);
 		
 		System.out.println("Input ArrayList is: "+inputlist.toString());
 		Iterator<Integer> old_itr = inputlist.iterator();
