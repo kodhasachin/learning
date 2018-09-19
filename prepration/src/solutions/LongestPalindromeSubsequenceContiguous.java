@@ -6,6 +6,9 @@ public class LongestPalindromeSubsequenceContiguous {
 	{
 		if(first==last)
 			return 1;
+		if(str.charAt(first)==str.charAt(last)&&first+1==last)
+			return 2;
+		
 		int len=0;
 		if(str.charAt(first)==str.charAt(last))
 			{
