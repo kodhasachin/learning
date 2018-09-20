@@ -2,30 +2,6 @@ package solutions;
 
 public class FindPrefixOrSuffix {
 	
-//	public static String find_prefix_or_suffix(String str1, String str2, boolean is_prefix)
-//	{
-//		String output = "";
-//		int i=0,j=0;
-//		if(!is_prefix)
-//		{
-//			while(i<str1.length() && j<str2.length() && str1.charAt(i)!=str2.charAt(j))
-//			{
-//				i++;
-//				j++;
-//			}
-//		}
-//		System.out.println("i="+i+" & j="+j);
-//		while(i<str1.length() && j<str2.length() && str1.charAt(i)==str2.charAt(j))
-//		{
-//			output=output+str1.charAt(i);
-//			i++;
-//			j++;
-//		}
-//		
-//		
-//		return output;
-//	}
-	
 	public static String find_prefix_or_suffix(String str1, String str2, boolean is_prefix)
 	{
 		String output = "";
