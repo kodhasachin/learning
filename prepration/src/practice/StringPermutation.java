@@ -2,7 +2,7 @@ package practice;
 
 public class StringPermutation {
 	
-	public static void string_permutation(String str, int s, int e)
+	public static void permute(String str, int s, int e)
 	{
 		if(s==e)
 			System.out.println(str);
@@ -10,29 +10,31 @@ public class StringPermutation {
 		{
 			for(int i=s; i<str.length(); i++)
 			{
-				str = swap(str, s, i);
-				string_permutation(str, s+1, e);
-				str = swap(str, s ,i);
+				str=swap(str,s,i);
+				permute(str, s+1, e);
+				str=swap(str,s,i);
 			}
+			
 		}
+	}
+	
+	public static String swap(String str, int i, int j)
+	{
+		char[] tmp=str.toCharArray();
+		char tmp_char = tmp[i];
+		tmp[i]=tmp[j];
+		tmp[j]=tmp_char;
+		return String.valueOf(tmp);
 		
 	}
 	
 	
-	public static String swap(String str, int i, int j)
+
+	public static void main(String[] args)
 	{
-		char [] arr = str.toCharArray();
-		char tmp = arr[i];
-		arr[i]=arr[j];
-		arr[j]=tmp;
-		str = String.valueOf(arr);
-		return str;
-	}
-
-	public static void main(String[] args) {
 		String str = "ABC";
-		string_permutation(str, 0, 2);
-
+		System.out.println("Given string is: "+str);
+		permute(str, 0, 2);
 	}
 
 }
