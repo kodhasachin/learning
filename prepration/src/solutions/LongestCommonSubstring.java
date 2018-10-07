@@ -24,6 +24,7 @@ public class LongestCommonSubstring {
 				}
 			}
 		}
+		System.out.println("Resultant Array is: "+Arrays.deepToString(res));
 		System.out.println("Length of Longest common String is: "+max);
 		if(max == 0)
 			return "No Common string exists";
@@ -40,8 +41,10 @@ public class LongestCommonSubstring {
 
 	public static void main(String[] args) {
 		
-		String str1 = "GeeksforGeeks";
-		String str2 = "QGeeksuiz";
+//		String str1 = "GeeksforGeeks";
+//		String str2 = "QGeeksuiz";
+		String str1 = "abcd";
+		String str2 = "ebc";
 		
 		System.out.println("First String is: "+str1);
 		System.out.println("Second String is: "+str2);
