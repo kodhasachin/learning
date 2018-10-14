@@ -1,9 +1,12 @@
 package solutions;
+import java.util.LinkedList;;
 
 public class StackImplementationUsingLinkedList {
 
 	public static void main(String[] args) {
-		LinkedList list = new LinkedList();
+		LinkedList<Integer> list = new LinkedList<Integer>();
+		
+		
 
 	}
 

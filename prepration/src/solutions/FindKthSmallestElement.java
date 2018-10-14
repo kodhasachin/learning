@@ -26,7 +26,7 @@ public class FindKthSmallestElement {
 		
 		int[] input = {3,2,6,1,1,2,5};
 		System.out.println("Input Array is: "+Arrays.toString(input));
-		System.out.println("3rd smallest element in array is: "+find_kth_smallest_element(input, 5));
+		System.out.println("3rd smallest element in array is: "+find_kth_smallest_element(input, 4));
 		
 		
 
