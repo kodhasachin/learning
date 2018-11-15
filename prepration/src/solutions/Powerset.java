@@ -50,7 +50,7 @@ public class Powerset {
 		char[] input_arr = {'a', 'b', 'c', 'd'};
 		
 		System.out.println("Input set: "+Arrays.toString(input_arr));
-		powerset_recurrsion(input_arr);
+		//powerset_recurrsion(input_arr);
 		powerset(input_arr);
 		
 		
